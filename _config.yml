@@ -1,0 +1,74 @@
+# Site settings
+title: Ochsenkofler - Der Ochsenkoflerhof in Burgstall
+email: info@ochsenkofler.it
+description: "Der Ochsenkoflerhof liegt auf der Sonnenseite des Etschtals. Erleben Sie Ihren Urlaub auf unserem sehr schön gelegenen Obstbauernhof!"
+keywords: "ochsenkofler,ochsenkoflerhof,urlaub auf dem bauernhof,burgstall,südtirol,alto adige,postal,burger,appartamenti,ferienwohnungen,apartement,zimmer,camere,vöranerweg 4,via verano 4,39014"
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://affectionate-noether-d37426.netlify.app/" # the base hostname & protocol for your site
+twitter_username: toburger
+github_username:  toburger
+
+# Build settings
+markdown: kramdown
+
+languages:
+    -
+        key: 'de'
+        value: 'Deutsch'
+    -
+        key: 'it'
+        value: 'Italiano'
+
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            language: de
+            layout: default
+            privacy: Datenschutz
+            address:
+                location: Burgstall
+                street: Vöranerweg 4
+            gallery_width: 350
+            heading:
+                left: Die Familie Burger
+                right: heißt Sie herzlich Willkommen auf dem Ochsenkoflerhof!
+            contact:
+                email: 'Ihre E-Mail Adresse:'
+                message: 'Nachricht:'
+                send: Anfrage senden
+    -
+        scope:
+            path: "it"
+        values:
+            language: it
+            layout: default
+            privacy: Privacy
+            address:
+                location: Postal
+                street: Via Verano 4
+            heading:
+                left: La famiglia Burger
+                right: le dà il benvenuto nell´Ochsenkoflerhof!
+            contact:
+                email: 'Indirizzo E-Mail:'
+                message: 'Messaggio:'
+                send: Invia
+
+collections:
+    ferienwohnungen:
+        output: true
+    home_popups:
+        width: 200
+        height: 200
+
+compress_html:
+  clippings: []
+  comments: ["<!-- ", " -->"]
+  endings: []
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: []

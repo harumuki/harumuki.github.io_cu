@@ -1,0 +1,11 @@
+---
+layout:
+---
+
+# robots.txt for {{ "/" | prepend: site.baseurl | prepend: site.url }}
+
+Sitemap: {{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
+
+User-agent: *
+Disallow:
+Crawl-delay: 1
